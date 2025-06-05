@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Board</title>
+    <link href="style.css" rel="stylesheet">
+    <link src="script.js" rel="stylesheet">
+    <style>
+    #btn1{
+    background-color: rgb(22, 22, 237);
+    width:25%;
+    height:30px;
+    color: white;
+    }
+input{
+    width: 50%;
+    height:30px;
+}
+select{
+    width:20%;
+    height:30px;
+}
+.first{
+    padding: 20px;
+}
+.second{
+    padding: 10px;
+}
+ul{
+    list-style: none;
+}
+h3{
+    text-align: center;
+    
+}
+
+
+
+
+</style>
+</head>
+<body>
+   
+    <div class="first">
+         <section>
+            <h3><b>Smart Task  Board</b></h3>
+        <label for="task"></label>
+        <input type="text" name="task" value="Enter a task" id="tsk">
+        <select id="choose">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+        <button id="btn1" onclick="AddTask()">Add Task</button>
+
+    </div>
+    </section>
+  
+    <div class="second">
+        <section>
+        <p><b>Task Summary</b></p>
+       
+            <p>Total Tasks:0</p>
+            <p>Completed Tasks:0</p>
+            <p>Completed Tasks:0</p>
+
+       </section>
+    </div>
+        
+
+    <script>
+        function AddTask(){
+        const tasks=document.getElementById("tsk");
+        if(!tasks){
+            alert("Task Description can not be Empty")
+        }
+    }
+        
+
+        
+    </script>
+</body>
+</html>
